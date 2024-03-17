@@ -25,7 +25,7 @@ description: "Video Editing with Natural Language and Sketching"
 syscolor: "#5C2A9D"
 sysfont: Open Sans Bold
 video: 
-conference:
+conference: https://kixlab.github.io/website-files/2024/iui2024-ExpressEdit-paper.pdf
 workshop: https://hai-gen.github.io/2024/papers/7484-Tilekbay.pdf
 repo:
 
