@@ -1,19 +1,19 @@
-- name: Tae Soo Kim
+- name: Bekzat Tilekbay
   affiliation: KAIST
-  website: https://taesookim.com
-  img: taesoo.jpeg
-- name: Yoonjoo Lee
+  website: https://x.com/tilekbayb
+  img: bekzat.jpg
+- name: Saelyne Yang
   affiliation: KAIST
-  website: https://yoonjoolee.com
-  img: yoonjoo.jpeg
-- name: Jamin Shin
-  affiliation: NAVER AI Lab
-  website: https://www.jayshin.xyz/
-  img: jamin.jpg
-- name: Young-Ho Kim
-  affiliation: NAVER AI Lab
-  website: http://younghokim.net/
-  img: youngho.jpg
+  website: https://saelyne.com
+  img: saelyne.jpg
+- name: Michal Lewkowicz
+  affiliation: Yale University
+  website: 
+  img: michal.jpg
+- name: Alex Suryapranata
+  affiliation: KAIST
+  website: 
+  img: alex.jpeg
 - name: Juho Kim
   affiliation: KAIST
   website: https://juhokim.com

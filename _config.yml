@@ -18,14 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: EvalLM
+title: ExpressEdit
 theme: minima
-description: "Interactive Evaluation of Large Language Model Prompts on User-Defined Criteria"
+description: "Video Editing with Natural Language and Sketching"
 
-syscolor: "#555555"
-sysfont: Inter
-video: https://www.youtube-nocookie.com/embed/7hvTnhiCO7Y?si=6I9aqVnatM8VoaJd
-paper: https://arxiv.org/abs/2309.13633
+syscolor: "#5C2A9D"
+sysfont: Open Sans Bold
+video: 
+conference:
+workshop:
+repo:
 
 plugins:
   - jekyll-feed

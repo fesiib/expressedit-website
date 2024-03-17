@@ -300,7 +300,7 @@ iframe { position: absolute; width: 100%; height: 100%; left: 0; top: 0; border-
 
 .authors-wrapper { text-align: center; }
 
-.author-container { display: inline-block; width: 12%; margin: 0 2% 0 2%; }
+.author-container { display: inline-block; width: 120px; margin: 0 2% 0 2%; }
 
 .author-container p { margin-bottom: 0px; font-size: 14px; }
 
@@ -332,7 +332,7 @@ pre { display: block; font-size: 14px; color: #333; word-break: break-all; word-
 
 .button-container { display: flex; justify-content: center; align-items: center; gap: 16px; margin-top: 16px; }
 
-.button { display: flex; justify-content: center; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 100px; background-color: #363636; color: #fff; fill: #fff; font-size: 16px; width: 80px; cursor: pointer; }
+.button { display: flex; justify-content: center; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 100px; background-color: #363636; color: #fff; fill: #fff; font-size: 16px; width: 140px; cursor: pointer; }
 
 .button:visited { color: #fff; }
 
@@ -348,7 +348,7 @@ pre { display: block; font-size: 14px; color: #333; word-break: break-all; word-
 
 .button-disabled:hover { text-decoration: none; color: #fff; }
 
-.sys-name { font-variant: small-caps; font-weight: bold; color: #555555; }
+.sys-name { font-variant: small-caps; font-weight: bold; color: #5C2A9D; }
 
 strong { font-weight: 500; }
 
@@ -358,6 +358,6 @@ strong { font-weight: 500; }
 
 .credits { color: #777; font-size: 14px; margin-bottom: 0px; }
 
-@media (max-width: 600px) { h1 { font-size: 36px; } h4 { font-size: 20px; } h2 { font-size: 20px; } h3 { font-size: 16px; } p { font-size: 14px; } .author-container p { font-size: 10px; } pre { font-size: 10px; } .wrapper { max-width: calc(100vw - 30px); } .author-container { display: inline-block; width: 22%; margin: 0 1% 0 1%; } .img-left { display: block; text-align: center; width: 70%; margin-left: 15%; } .text-right { width: 100%; margin-left: 0px; } .sys-img { width: 100%; margin-left: 0; } .acknowledgement { font-size: 12px; } .credits { font-size: 10px; } .footer > div { max-width: calc(100vw - 30px); } }
+@media (max-width: 600px) { h1 { font-size: 36px; } h4 { font-size: 20px; } h2 { font-size: 20px; } h3 { font-size: 16px; } p { font-size: 14px; } .author-container p { font-size: 20px; } pre { font-size: 10px; } .wrapper { max-width: calc(100vw - 30px); } .author-container { display: inline-block; width: 100px; margin: 0 1% 0 1%; } .img-left { display: block; text-align: center; width: 70%; margin-left: 15%; } .text-right { width: 100%; margin-left: 0px; } .sys-img { width: 100%; margin-left: 0; } .acknowledgement { font-size: 12px; } .credits { font-size: 10px; } .footer > div { max-width: calc(100vw - 30px); } }
 
 /*# sourceMappingURL=styles.css.map */
