@@ -5,7 +5,7 @@ layout: default
 {: .text-left}
 <span class="sys-name">ExpressEdit</span> is a system that enables editing videos via NL text and sketching on the video frame. Powered by LLM and vision models, the system interprets **(1) temporal, (2) spatial, and (3) operational references in an NL command and spatial references from sketching**. The system implements the interpreted edits, which then the user can iterate on.
 <br/><br/>
-<span class="sys-name">ExpressEdit</span>'s design is motivated by analysis of **176 multimodal expressions of editing commands** from 10 video editors, which revealed the patterns of use of NL and sketching in describing edit intents.
+<span class="sys-name">ExpressEdit</span>'s design is motivated by an analysis of **176 multimodal expressions of editing commands** from 10 video editors, which revealed the patterns of use of NL and sketching in describing edit intents.
 <br/><br/>
 We present two iterations of <span class="sys-name">ExpressEdit</span>'s interface and the overview of the pipeline.
 
@@ -19,7 +19,7 @@ We present two iterations of <span class="sys-name">ExpressEdit</span>'s interfa
 {: .sys-img}
 ![Main interface of ExpressEdit](/assets/img/old-system.png)
 
-The first iteration of <span class="sys-name">ExpressEdit</span>'s interface is designed to allow users (1) express their edit commands through natural language text and sketching on the video and (2) iterate on their edit commands as well as manually manipulate the interpretation results.
+The first iteration of <span class="sys-name">ExpressEdit</span>'s interface is designed to allow users to (1) express their edit commands through natural language text and sketching on the video and (2) iterate on their edit commands as well as manually manipulate the interpretation results.
 
 
 <br/>
@@ -27,7 +27,7 @@ The first iteration of <span class="sys-name">ExpressEdit</span>'s interface is 
 {: .text-left}
 <span class="sys-name">ExpressEdit</span> supports **Edit List** that allows the user to add a layer on top of the video that contains a set of edits. The user can press the *Add* button to add a layer and the edit commands issued by the user will be stored under the same layer. 
 <br/><br/>
-To describe the edit command, the user can use **Edit Description** panel and specify *Natural Langauge Text* or *Sketch* on top of the frame. 
+To describe the edit command, the user can use the **Edit Description** panel and specify *Natural Language Text* or *Sketch* on top of the frame. 
 
 {: .img-right}
 ![The animation that shows initiation of the edit command](/assets/img/old-initiating.gif)
@@ -57,7 +57,7 @@ The second iteration of <span class="sys-name">ExpressEdit</span>'s interface is
 <br/>
 
 {: .text-left}
-Similar to the first version, <span class="sys-name">ExpressEdit</span> supports **Tabs** that allows the user to add a layer on top of the video by pressing **+**. However, now, the user can see the edit commands they issued as well as the suggested edits in the scrollable panel.
+Similar to the first version, <span class="sys-name">ExpressEdit</span> supports **Tabs** that allow the user to add a layer on top of the video by pressing **+**. However, now, the user can see the edit commands they issued as well as the suggested edits in the scrollable panel.
 
 {: .img-right}
 ![The animation that shows initiation of the edit command](/assets/img/new-initiating.gif)
@@ -83,13 +83,13 @@ Users can browse the suggested edits and turn them on/off as they edit the video
 
 ## Pipeline
 
-<span class="sys-name">ExpressEdit</span> is powered by CV & LLM based pipeline that interprets NL & Sketch edit commands. It consist of 2 stages: (1) offline stage which preprocesses the footage to extract useful metadata; (2) online stage which interprets the edit commands of the user using the preprocessed metadata.
+<span class="sys-name">ExpressEdit</span> is powered by CV & LLM based pipeline that interprets NL & Sketch edit commands. It consists of 2 stages: (1) the offline stage which preprocesses the footage to extract useful metadata; (2) the online stage which interprets the edit commands of the user using the preprocessed metadata.
 
 ### Preprocessing stage (offline)
 
 ![The animation that shows the preprocessing stage of the pipeline](/assets/img/pipeline-offline.gif)
 
-The pipeline first preprocess the footage video and extract textual descriptions of *10-second segments* and segmentations of each *1-second frame* of the video.
+The pipeline first preprocesses the footage video and extracts textual descriptions of *10-second segments* and segmentations of each *1-second frame* of the video.
 
 Textual descriptions consist of 
 - **dense captions** by <a href="https://github.com/davidnvq/grit">GRIT</a>
@@ -103,9 +103,9 @@ The pipeline also extracts **segmentations** using <a href="https://github.com/f
 
 ![The animation that shows how the pipeline handles the online requests](/assets/img/pipeline-online.gif)
 
-As the user issues an edit command, the pipeline parses the NL command, and interprets each of the references (temporal, spatial, and edit) by using the preprocessed metadata with corresponding <a href="https://openai.com/gpt-4">GPT-4</a> prompts.
+As the user issues an edit command, the pipeline parses the NL command and interprets each of the references (temporal, spatial, and edit) by using the preprocessed metadata with corresponding <a href="https://openai.com/gpt-4">GPT-4</a> prompts.
 
-In particular, we use both <a href="https://openai.com/gpt-4">GPT-4</a> and <a href="https://github.com/openai/CLIP">CLIP</a> to interpret the spatial location as the pipline may need to consider the user's sketch and the segmentations from the metadata.
+In particular, we use both <a href="https://openai.com/gpt-4">GPT-4</a> and <a href="https://github.com/openai/CLIP">CLIP</a> to interpret the spatial location as the pipeline may need to consider the user's sketch and the segmentations from the metadata.
 
 ------
 
