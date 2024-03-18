@@ -186,16 +186,17 @@ pre {
 
 .button {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  gap: 15px;
   padding: 8px 16px;
   border-radius: 100px;
   background-color: #363636;
   color: #fff;
   fill: #fff;
-  font-size: 16px;
-  width: 140px;
+  font-size: 14px;
+  text-align: center;
+  width: fit-content;
   cursor: pointer;
 
   &:visited {
@@ -215,14 +216,14 @@ pre {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 15px;
   padding: 8px 16px;
   border-radius: 100px;
   background-color: #787878;
   color: #fff;
   fill: #fff;
-  font-size: 16px;
-  width: 120px;
+  font-size: 14px;
+  width: fit-content;
   cursor: default;
 
   &:visited {

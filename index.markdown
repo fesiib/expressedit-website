@@ -14,7 +14,7 @@ We present two iterations of <span class="sys-name">ExpressEdit</span>'s interfa
 
 ------
 
-## Interface (Iteration 1)
+## System Interface (Iteration 1)
 
 {: .sys-img}
 ![Main interface of ExpressEdit](/assets/img/old-system.png)
@@ -46,7 +46,7 @@ The user can go over the suggestions and either *accept* them or *reject* them. 
 
 ------
 
-## Interface (Iteration 2)
+## System Interface (Iteration 2)
 
 {: .sys-img}
 ![Main interface of ExpressEdit](/assets/img/new_system.jpg)
@@ -93,7 +93,7 @@ The pipeline first preprocesses the footage video and extracts textual descripti
 
 Textual descriptions consist of (1) **synthetic caption** & **salient objects** by <a href="https://huggingface.co/docs/transformers/main/model_doc/blip-2">BLIP-2</a>, (2) **recognized actions** by <a href="https://github.com/OpenGVLab/InternVideo">InternVideo</a>, and (3) **transcript** from original Youtube video by  <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>.
 
-The pipeline also extracts **segmentations** using <a href="https://github.com/facebookresearch/segment-anything">Segment-Anything</a> and excludes the areas that are too small.
+The pipeline also extracts **segmentations** using <a href="https://github.com/facebookresearch/segment-anything">Segment-Anything</a> excluding the areas that are small.
 
 ### Interpretation stage (online)
 
@@ -107,7 +107,9 @@ In particular, we use both <a href="https://openai.com/gpt-4">GPT-4</a> and <a h
 
 ## Bibtex
 <pre>
+
 TBA
+
 </pre>
 
 ------

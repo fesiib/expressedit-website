@@ -332,7 +332,7 @@ pre { display: block; font-size: 14px; color: #333; word-break: break-all; word-
 
 .button-container { display: flex; justify-content: center; align-items: center; gap: 16px; margin-top: 16px; }
 
-.button { display: flex; justify-content: center; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 100px; background-color: #363636; color: #fff; fill: #fff; font-size: 16px; width: 140px; cursor: pointer; }
+.button { display: flex; justify-content: space-between; align-items: center; gap: 15px; padding: 8px 16px; border-radius: 100px; background-color: #363636; color: #fff; fill: #fff; font-size: 14px; text-align: center; width: fit-content; cursor: pointer; }
 
 .button:visited { color: #fff; }
 
@@ -340,7 +340,7 @@ pre { display: block; font-size: 14px; color: #333; word-break: break-all; word-
 
 .button:hover { background-color: #222222; color: #fff; text-decoration: none; }
 
-.button-disabled { display: flex; justify-content: center; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 100px; background-color: #787878; color: #fff; fill: #fff; font-size: 16px; width: 120px; cursor: default; }
+.button-disabled { display: flex; justify-content: center; align-items: center; gap: 15px; padding: 8px 16px; border-radius: 100px; background-color: #787878; color: #fff; fill: #fff; font-size: 14px; width: fit-content; cursor: default; }
 
 .button-disabled:visited { color: #fff; }
 
