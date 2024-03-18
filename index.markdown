@@ -92,10 +92,10 @@ Users can browse the suggested edits and turn them on/off as they edit the video
 The pipeline first preprocesses the footage video and extracts textual descriptions of *10-second segments* and segmentations of each *1-second frame* of the video.
 
 Textual descriptions consist of 
-- **dense captions** by <a href="https://github.com/davidnvq/grit">GRIT</a>
-- **synthetic caption** & **salient objects** by <a href="https://huggingface.co/docs/transformers/main/model_doc/blip-2">BLIP-2</a>
-- **recognized actions** by <a href="https://github.com/OpenGVLab/InternVideo">InternVideo</a>
-- **transcript**
+
+(1) **synthetic caption** & **salient objects** by <a href="https://huggingface.co/docs/transformers/main/model_doc/blip-2">BLIP-2</a>
+(2) **recognized actions** by <a href="https://github.com/OpenGVLab/InternVideo">InternVideo</a>
+(3) **transcript** from original Youtube video by  <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>
 
 The pipeline also extracts **segmentations** using <a href="https://github.com/facebookresearch/segment-anything">Segment-Anything</a> and excludes the areas that are too small.
 
