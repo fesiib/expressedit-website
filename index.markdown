@@ -113,7 +113,7 @@ In particular, we use both <a href="https://openai.com/gpt-4">GPT-4</a> and <a h
     title={ExpressEdit: Video Editing with Natural Language and Sketching},
     year={2024},
     archivePrefix={arXiv},
-    primaryClass={cs.HC}
+    primaryClass={cs.HC},
     doi={10.1145/3640543.3645164},
 }
 
