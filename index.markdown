@@ -108,13 +108,17 @@ In particular, we use both <a href="https://openai.com/gpt-4">GPT-4</a> and <a h
 ## Bibtex
 <pre>
 
-@inproceedings{tilekbay2024expressedit,
-    author={Bekzat Tilekbay and Saelyne Yang and Michal Lewkowicz and Alex Suryapranata and Juho Kim},
+@inproceedings{
+    tilekbay2024expressedit,
     title={ExpressEdit: Video Editing with Natural Language and Sketching},
-    year={2024},
-    archivePrefix={arXiv},
-    primaryClass={cs.HC},
-    doi={10.1145/3640543.3645164},
+    author={Tilekbay, Bekzat and Yang, Saelyne and Lewkowicz, Michal Adam and Suryapranata, Alex and Kim, Juho},
+    url={http://dx.doi.org/10.1145/3640543.3645164},
+    DOI={10.1145/3640543.3645164},
+    publisher={ACM},
+    series={IUI ’24},
+    booktitle={Proceedings of the 29th International Conference on Intelligent User Interfaces},
+    year={2024}, month=mar,
+    collection={IUI ’24}
 }
 
 </pre>
