@@ -27,7 +27,7 @@ sysfont: Open Sans Bold
 video: 
 conference: https://arxiv.org/abs/2403.17693
 workshop: https://hai-gen.github.io/2024/papers/7484-Tilekbay.pdf
-repo:
+repo: https://github.com/fesiib/video-editing-pipeline
 
 plugins:
   - jekyll-feed
