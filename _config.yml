@@ -24,10 +24,11 @@ description: "Video Editing with Natural Language and Sketching"
 
 syscolor: "#5C2A9D"
 sysfont: Open Sans Bold
-video: 
+video: https://youtu.be/t16Se9rNLLQ?si=J7leT_pMS3wJs26R
 conference: https://arxiv.org/abs/2403.17693
 workshop: https://hai-gen.github.io/2024/papers/7484-Tilekbay.pdf
 repo: https://github.com/fesiib/video-editing-pipeline
+dataset: https://github.com/fesiib/video-editing-pipeline/blob/main/gt_data/parsed_gt-v3.json
 
 plugins:
   - jekyll-feed
